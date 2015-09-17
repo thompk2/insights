@@ -3,3 +3,7 @@
 /.tmp
 /.sass-cache
 /bower_components
+
+app/authors.json
+
+app/content.json
