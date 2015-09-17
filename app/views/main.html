@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Report Card</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h2>Most viewed Authors (tofu)</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="small-1 columns"><strong>tofu</strong></div>
+  <div class="small-1 columns"><strong>mofu</strong></div>
+  <div class="small-1 columns"><strong>bofu</strong></div>
+  <div class="small-9 columns"><strong>Name</strong></div>
+</div>
+<div class="row grade-row" ng-repeat="item in items | orderBy:'tofu' | limitTo:10">
+  <div class="small-1 columns">
+    <div class="report-grade {{item.tofu}} highlight">{{item.tofu}}</div>
+  </div>
+  <div class="small-1 columns">
+    <div class="report-grade {{item.mofu}}">{{item.mofu}}</div>
+  </div>
+  <div class="small-1 columns">
+    <div class="report-grade {{item.bofu}}">{{item.bofu}}</div>
+  </div>
+  <div class="small-9 columns">
+    {{item.name}}
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+    <h2>Authors who generate leads (mofu)</h2>
+  </div>
+</div>
+<div class="row grade-row" ng-repeat="item in items | orderBy:'mofu' | limitTo:10">
+  <div class="small-1 columns">
+    <div class="report-grade {{item.tofu}}">{{item.tofu}}</div>
+  </div>
+  <div class="small-1 columns">
+    <div class="report-grade {{item.mofu}} highlight">{{item.mofu}}</div>
+  </div>
+  <div class="small-1 columns">
+    <div class="report-grade {{item.bofu}}">{{item.bofu}}</div>
+  </div>
+  <div class="small-9 columns">
+    {{item.name}}
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+    <h2>Authors who close (bofu)</h2>
+  </div>
+</div>
+<div class="row grade-row" ng-repeat="item in items | orderBy:'bofu' | limitTo:10">
+  <div class="small-1 columns">
+    <div class="report-grade {{item.tofu}}">{{item.tofu}}</div>
+  </div>
+  <div class="small-1 columns">
+    <div class="report-grade {{item.mofu}}">{{item.mofu}}</div>
+  </div>
+  <div class="small-1 columns">
+    <div class="report-grade {{item.bofu}} highlight">{{item.bofu}}</div>
+  </div>
+  <div class="small-9 columns">
+    {{item.name}}
+  </div>
+</div>

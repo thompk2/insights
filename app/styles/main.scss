@@ -1,0 +1,60 @@
+// bower:scss
+@import "components-font-awesome/scss/font-awesome.scss";
+// endbower
+
+$dark: #0f0f0f;
+$light: #5c5c5c;
+$lightest: #fbfbfb;
+
+$one: rgb(0, 104, 55);
+$two: rgb(102, 189, 99);
+$three: #E8DA21;
+$four: rgb(244, 109, 67);
+$five: rgb(165, 0, 38);
+
+.grade-row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  background: $lightest;
+}
+
+$report-size: 2rem;
+$border-width: .1rem;
+$report-offset: .5rem;
+.report-grade {
+  position: relative;
+  border-radius: 100%;
+  border: $border-width solid $lightest;
+  color: $lightest;
+  display: inline-block;
+  font-weight: bold;
+  height: $report-size;
+  line-height: $report-size;
+  text-align: center;
+  width: $report-size;
+
+  &.A {
+    background: $one
+  }
+
+  &.B {
+    background: $two
+  }
+
+  &.C {
+    background: $three
+  }
+
+  &.D {
+    background: $four
+  }
+
+  &.F {
+    background: $five
+  }
+
+  &.highlight {
+    box-shadow: 0 0 10px 0px $dark;
+  }
+}
